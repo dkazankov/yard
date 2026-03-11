@@ -1,0 +1,20 @@
+{
+    "ext_name": {
+        "message": "Yet Another hdRezka Downloader"
+    },
+    "manifest_description": {
+        "message": "Fast and convenient downloading of movies and TV shows from rezka.ag."
+    },
+    "subtitles": {
+        "message": "Subtitles"
+    },
+    "download": {
+        "message": "Download"
+    },
+    "download_link_description": {
+        "message": "Click on the link to save the file"
+    },
+    "cancel": {
+        "message": "Cancel"
+    }
+}
