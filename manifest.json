@@ -32,7 +32,8 @@
         "*://hdrezka.ag/*",
         "*://hdrezka.co/*",
         "*://rezka-ua.in/*",
-        "*://rezka-ua.co/*"
+        "*://rezka-ua.co/*",
+        "*://rezka-ag.net/*"
     ],
     "background": {
         "service_worker": "service_worker.js"
@@ -46,7 +47,8 @@
                 "*://hdrezka.ag/*",
                 "*://hdrezka.co/*",
                 "*://rezka-ua.in/*",
-                "*://rezka-ua.co/*"
+                "*://rezka-ua.co/*",
+                "*://rezka-ag.net/*"
             ],
             "js": ["isolated.js"]
         },
@@ -58,7 +60,8 @@
                 "*://hdrezka.ag/*",
                 "*://hdrezka.co/*",
                 "*://rezka-ua.in/*",
-                "*://rezka-ua.co/*"
+                "*://rezka-ua.co/*",
+                "*://rezka-ag.net/*"
             ],
             "js": ["main.js"],
             "world": "MAIN"
@@ -76,7 +79,8 @@
                 "*://hdrezka.ag/*",
                 "*://hdrezka.co/*",
                 "*://rezka-ua.in/*",
-                "*://rezka-ua.co/*"
+                "*://rezka-ua.co/*",
+                "*://rezka-ag.net/*"
             ],
             "use_dynamic_url": true
         }
