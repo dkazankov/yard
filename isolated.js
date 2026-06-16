@@ -78,7 +78,6 @@ if (player) {
 			const button_element = createDownloadButton()
 			downloader.appendChild(button_element)
 
-			// const link_template = await createElementFromHTML(chrome.runtime.getURL("assets/download_link.html"))
 			const link_template = createElementFromHTMLString(
 				`<a target="_blank" style="display: block;
 					color: white; text-decoration: none; padding: 4px 5px; margin: 2px 0; border-radius: 6px; transition: 0.2s; cursor: pointer;">
@@ -106,7 +105,6 @@ if (player) {
 			)
 			link_template.title = chrome.i18n.getMessage("download_link_description")
 
-			// const control_template = await createElementFromHTML(chrome.runtime.getURL("assets/download_control.html"))
 			const control_template = createElementFromHTMLString(
 				`<span class="download-area" style="display: flex; align-items: center; padding: 6px 0;">
 					<progress max="100"></progress>
@@ -117,13 +115,11 @@ if (player) {
 			)
 			control_template.lastElementChild.title = chrome.i18n.getMessage("cancel")
 
-			// const size_template = await createElementFromHTML(chrome.runtime.getURL("assets/file_size.html"))
 			const size_template = createElementFromHTMLString(`<span style="float: right;">?</span>`)
 
 			// console.log('Downloader created')
 
 			function createDownloadMenu() {
-				// const element = await createElementFromHTML(chrome.runtime.getURL("assets/download_menu.html"))
 				const element = createElementFromHTMLString(
 					`<div style="display: none; min-height: 50px; width: 350px; background: rgba(93, 93, 93, 0.5); backdrop-filter: blur(5px);
 								position: absolute; border-radius: 6px; padding: 4px; filter: drop-shadow(black 2px 4px 6px); z-index: 100; right: 0; top: 55px; opacity: 0;
@@ -166,7 +162,6 @@ if (player) {
 			}
 
 			function createDownloadButton() {
-				// const element = await createElementFromHTML(chrome.runtime.getURL("assets/download_button.html"))
 				const element = createElementFromHTMLString(
 					`<div style="right: 55px; top: 0; height: 50px; width: 50px;
 							position: absolute; cursor: pointer; transition: 0.3s; background: #32cd32; color: white;">
@@ -174,7 +169,7 @@ if (player) {
 					</div>`
 				)
 				element.title = chrome.i18n.getMessage("download")
-				element.firstElementChild.src = chrome.runtime.getURL("assets/download.svg")
+				element.firstElementChild.src = chrome.runtime.getURL("/assets/download.svg")
 				element.onmouseover = function () {
 					element.style.background = '#013220'
 				}
